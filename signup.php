@@ -31,28 +31,17 @@ if ($_SERVER["REQUEST_METHOD"]=="POST"){
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <title>Sign Up!</title>
   </head>
 <body>
-    <?php require 'partials/_nav.php' ?>
-    <?php
-    if($alert){
-    echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
-    <strong>Success!</strong> Your account is created.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-    </div>';
-    }
-    ?>
-
-    <h1>Sign Up Form!</h1>
-    <div class="container">
-        <form action="/LOC 5.0/signup.php" method="post" enctype="multipart/form-data">
+<?php require 'partials/_nav.php' ?>
+<div class="container">
+    <form action="/LOC 5.0/signup.php" method="post">
+            <h1>Sign Up Form!</h1>
         <div class="form-row">
                 <div class="col-md-4 mb-3">
                 <label for="Fname">First name</label>
